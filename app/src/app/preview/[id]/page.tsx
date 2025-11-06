@@ -26,6 +26,20 @@ export default function PreviewPage({ params }: { params: Promise<{ id: string }
 
   useEffect(() => {
     setLoading(true);
+    // Prefer client-side data first for serverless environments
+    try {
+      const raw = typeof window !== "undefined" ? localStorage.getItem(`preview:${id}`) : null;
+      if (raw) {
+        const parsed = JSON.parse(raw) as { website_url: string; chatbot_script: string };
+        setWebsiteUrl(parsed.website_url);
+        setChatbotScript(parsed.chatbot_script);
+        setError(null);
+        setLoading(false);
+        return;
+      }
+    } catch {}
+
+    // Fallback to server API if client storage missing
     fetchPreviewWithRetry(id)
       .then((data) => {
         setWebsiteUrl(data.website_url);

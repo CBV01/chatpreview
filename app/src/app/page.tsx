@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Star, Pipette } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import MobileNav from "@/components/MobileNav";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 
 export default function Home() {
@@ -26,6 +27,14 @@ export default function Home() {
     const id = (globalThis.crypto && typeof globalThis.crypto.randomUUID === "function")
       ? globalThis.crypto.randomUUID()
       : `p_${Date.now().toString(36)}_${Math.random().toString(36).slice(2)}`;
+
+    // Persist locally so the preview works on Vercel without server-side storage
+    try {
+      localStorage.setItem(
+        `preview:${id}`,
+        JSON.stringify({ website_url: website, chatbot_script: scriptCode })
+      );
+    } catch {}
 
     // Fire-and-forget record creation to reduce perceived latency
     fetch("/api/create-preview", {
@@ -53,10 +62,11 @@ export default function Home() {
             </nav>
             <button
               onClick={() => setIsOpen(true)}
-              className="inline-flex items-center rounded-full bg-gradient-to-r from-orange-500 to-amber-500 px-5 py-2 text-sm font-semibold text-black hover:from-orange-600 hover:to-amber-600"
+              className="hidden md:inline-flex items-center rounded-full bg-gradient-to-r from-orange-500 to-amber-500 px-5 py-2 text-sm font-semibold text-black hover:from-orange-600 hover:to-amber-600"
             >
               Generate Preview
             </button>
+            <MobileNav onGenerateClick={() => setIsOpen(true)} />
           </div>
         </div>
       </header>
