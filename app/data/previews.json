@@ -1,0 +1,91 @@
+{
+  "previews": [
+    {
+      "id": "b75c3087-139e-42a3-98f2-b295a0048e37",
+      "website_url": "https://www.vlphplumbing.com/",
+      "chatbot_script": "<script> (function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"rLBeBzmOCEP5RKPMXxm0s\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})(); </script>",
+      "created_at": "2025-11-05T14:21:04.839Z"
+    },
+    {
+      "id": "2a0bc4d8-5908-4a52-82ea-bf94059f7a47",
+      "website_url": "https://www.vlphplumbing.com/",
+      "chatbot_script": "<script> (function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"rLBeBzmOCEP5RKPMXxm0s\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})(); </script>",
+      "created_at": "2025-11-05T14:25:00.008Z"
+    },
+    {
+      "id": "263aaedb-b1a9-4e06-b3af-47a436a6646d",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script> (function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"rLBeBzmOCEP5RKPMXxm0s\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})(); </script>",
+      "created_at": "2025-11-05T15:05:20.934Z"
+    },
+    {
+      "id": "c8b60666-0b86-42ae-80ba-492c8a28dcc8",
+      "website_url": "https://www.warriorlandscaping.ca/",
+      "chatbot_script": "<script> (function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"rLBeBzmOCEP5RKPMXxm0s\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})(); </script>",
+      "created_at": "2025-11-05T15:11:08.129Z"
+    },
+    {
+      "id": "6884c4c4-a713-495b-b253-ba032f91280e",
+      "website_url": "https://sunreadylandscaping.ca/",
+      "chatbot_script": "<script> (function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"rLBeBzmOCEP5RKPMXxm0s\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})(); </script>",
+      "created_at": "2025-11-05T15:54:42.630Z"
+    },
+    {
+      "id": "27699288-26dd-443c-8204-73cb72f88b06",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script> (function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"rLBeBzmOCEP5RKPMXxm0s\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})(); </script>",
+      "created_at": "2025-11-05T16:49:29.946Z",
+      "category": "Uncategorized",
+      "name": "Plumbing"
+    },
+    {
+      "id": "017ca5d5-5bc0-4529-a1e2-2dececea5feb",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"Yc5No4bHv-mhE-12EjfeP\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-06T10:32:33.471Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "ecea8c58-71c5-46d3-80ce-0f07b3b2392c",
+      "website_url": "https://www.cirtonplumbing.com/",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"Yc5No4bHv-mhE-12EjfeP\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-06T10:56:46.733Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "e407b12d-46c7-42d0-9d2e-1b3a985db689",
+      "website_url": "https://www.cirtonplumbing.com/",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"Yc5No4bHv-mhE-12EjfeP\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-06T11:02:15.751Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "60b61860-ba32-4aab-a47c-83bc39b19a14",
+      "website_url": "https://www.cirtonplumbing.com/",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"Yc5No4bHv-mhE-12EjfeP\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-06T11:10:01.283Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "0e84da4b-a54c-464a-a139-a1bbb2247e26",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"Yc5No4bHv-mhE-12EjfeP\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-06T11:10:43.210Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "910ede00-8331-471e-96d4-e19f137f3886",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"Yc5No4bHv-mhE-12EjfeP\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-06T11:17:31.232Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "94e40566-8b04-4722-80b7-77bd9387133d",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"Yc5No4bHv-mhE-12EjfeP\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-06T11:36:25.491Z",
+      "category": "Uncategorized"
+    }
+  ]
+}
