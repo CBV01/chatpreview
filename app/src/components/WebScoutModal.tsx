@@ -724,7 +724,7 @@ export default function WebScoutModal({ isOpen, onClose }: { isOpen: boolean; on
   // Full-screen results overlay
   return (
     <div className="fixed inset-0 z-50 flex flex-col bg-black">
-      <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between px-4 py-3 sm:px-6 sm:py-4 border-b border-white/10">
         <div>
           <div className="text-xl font-semibold">Scout Results</div>
           {tab === "domains" && (
@@ -737,8 +737,8 @@ export default function WebScoutModal({ isOpen, onClose }: { isOpen: boolean; on
             </div>
           )}
         </div>
-        <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center flex-wrap gap-2 sm:gap-3">
+          <div className="flex items-center flex-wrap gap-2">
             <Button type="button" className="bg-white/5 hover:bg-white/10" onClick={prevMailBatch} disabled={getTotalMailBatches() === 0 || mailtoBatchIndex === 0}>
               {"<"}
             </Button>
@@ -809,7 +809,7 @@ export default function WebScoutModal({ isOpen, onClose }: { isOpen: boolean; on
         </div>
       </div>
 
-      <div className="flex-1 overflow-y-auto px-6 py-6">
+      <div className="flex-1 overflow-y-auto px-4 py-4 sm:px-6 sm:py-6">
         {showTemplateOverlay && (
           <div className="fixed inset-0 z-50 flex items-center justify-center">
             <div className="absolute inset-0 bg-black/60" onClick={() => setShowTemplateOverlay(false)} />
@@ -882,7 +882,7 @@ export default function WebScoutModal({ isOpen, onClose }: { isOpen: boolean; on
             </div>
           </div>
         )}
-        <div className="grid auto-rows-fr gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 2xl:grid-cols-10">
+        <div className="grid auto-rows-fr gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
           {results.map((r, idx) => (
             <div key={idx} className="rounded-lg border border-white/15 bg-black/40 p-4 overflow-hidden">
               <div className="mb-1 text-xs text-gray-300 break-words">{r.domain}</div>
