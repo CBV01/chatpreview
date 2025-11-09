@@ -86,6 +86,97 @@
       "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"Yc5No4bHv-mhE-12EjfeP\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
       "created_at": "2025-11-06T11:36:25.491Z",
       "category": "Uncategorized"
+    },
+    {
+      "id": "84c8b40a-84ae-40d2-b5a8-94b54e1f932c",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"_Z3fsgfLf8TsBrSdLV9TB\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-06T13:42:23.530Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "9e9bf455-ea60-4c0e-9b30-4cfb1a2387f0",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"_Z3fsgfLf8TsBrSdLV9TB\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-06T14:35:37.528Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "253e0539-268e-4d24-9ce4-b422c02a87f8",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"_Z3fsgfLf8TsBrSdLV9TB\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-07T11:56:36.519Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "f591aacd-821d-4ecd-84ab-30138ecf8fff",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"_Z3fsgfLf8TsBrSdLV9TB\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-07T12:03:00.389Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "ce7cd73d-c2d7-40f0-b425-610d9998be86",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"_Z3fsgfLf8TsBrSdLV9TB\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-07T15:59:50.981Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "ce90f220-ae35-4934-aa6f-d5bce01548b5",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"_Z3fsgfLf8TsBrSdLV9TB\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-07T16:14:36.565Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "8e322db1-c7c5-45a1-b11c-5d20ffc25dfe",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"_Z3fsgfLf8TsBrSdLV9TB\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-07T16:33:09.982Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "bbca5d83-49d7-45d0-9398-7da2bf3c1e35",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"YQujgORf0yftYW7-CgUWc\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-07T16:35:08.686Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "c7ad7af2-4b71-4a71-8ba1-2311646ad84e",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"YQujgORf0yftYW7-CgUWc\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-08T15:54:49.550Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "46e5e017-a8e3-4787-9ecd-eefb91ec8e18",
+      "website_url": "https://enjoytonunivers.com",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"YQujgORf0yftYW7-CgUWc\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-08T23:40:19.826Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "25e7d452-c9a8-4403-b130-06ba3a2af159",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"YQujgORf0yftYW7-CgUWc\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-08T23:48:21.054Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "26406e07-1f5b-4477-a31f-36598d3c7e82",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"YQujgORf0yftYW7-CgUWc\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-08T23:56:02.450Z",
+      "category": "Uncategorized"
+    },
+    {
+      "id": "932f8473-6365-4aeb-be3b-a5c724ea3139",
+      "website_url": "https://codebyvictor.vercel.app",
+      "chatbot_script": "<script>\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https://www.chatbase.co/embed.min.js\";script.id=\"YQujgORf0yftYW7-CgUWc\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\n</script>",
+      "created_at": "2025-11-09T00:07:53.820Z",
+      "category": "Uncategorized"
     }
   ]
 }

@@ -5,9 +5,12 @@ import { Star, Pipette } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MobileNav from "@/components/MobileNav";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import WebScoutModal from "@/components/WebScoutModal";
+import Particles from "@/components/Particles";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scoutOpen, setScoutOpen] = useState(false);
   const [websiteUrl, setWebsiteUrl] = useState("");
   const [script, setScript] = useState("");
   const [loading, setLoading] = useState(false);
@@ -49,7 +52,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen text-white">
-      <header className="sticky top-0 z-40 px-6 py-7">
+      <header className="sticky top-0 z-40 mt-2 px-6 py-0">
         <div className="container mx-auto">
           <div className="mx-auto flex w-full max-w-5xl items-center justify-between rounded-full border border-white/10 bg-black/70 px-6 py-4 shadow-lg backdrop-blur">
             <div className="flex items-center gap-3">
@@ -70,8 +73,9 @@ export default function Home() {
           </div>
         </div>
       </header>
-      <main className="flex-1">
-        <section className="py-24">
+      <main className="flex-1 relative">
+        <Particles />
+        <section className="py-24 relative">
           <div className="container mx-auto px-6 text-center">
         <div className="mx-auto flex max-w-5xl flex-col gap-6">
           <div className="mx-auto mb-3 w-fit" aria-hidden="true">
@@ -79,20 +83,22 @@ export default function Home() {
               <span className="inline-flex h-6 w-6 items-center justify-center">
                 <Pipette className="h-5 w-5 text-orange-400" />
               </span>
-              <span className="opacity-90 font-medium">→ Chatbot Preview</span>
+              <span className="opacity-90 font-medium">→ Scout & Preview</span>
             </div>
           </div>
           <h1 className="text-3xl font-semibold lg:text-6xl">
-            Preview your chatbot on any website — instantly
+            Your go-to tool for all scouting purposes
           </h1>
           <p className="text-balance text-gray-200 lg:text-lg">
-            Paste your website URL and chatbot embed code to generate a live preview in seconds. We render your site and inject your chatbot so you can test placement, behavior, and UX before deploying.
+            Find qualified leads, collect domains and emails, generate hooks, personalize outreach, and preview chatbots—everything you need for fast, effective scouting in one place.
           </p>
         </div>
 
-        <Button size="lg" className="mt-10" onClick={() => setIsOpen(true)}>
-          Generate Preview
-        </Button>
+        <div className="mt-10 flex items-center justify-center gap-3">
+          <Button size="lg" onClick={() => setIsOpen(true)}>Generate Preview</Button>
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={() => setScoutOpen(true)}>Web Scout</Button>
+          {/* Chat Assistant removed */}
+        </div>
 
         <div className="mx-auto mt-10 flex w-fit flex-col items-center gap-4 sm:flex-row">
           <span className="mx-4 inline-flex items-center -space-x-4">
@@ -172,6 +178,11 @@ export default function Home() {
               </div>
             </div>
           )}
+
+          {scoutOpen && (
+            <WebScoutModal isOpen={scoutOpen} onClose={() => setScoutOpen(false)} />
+          )}
+          {/* Chat Assistant removed */}
         </section>
       </main>
       <footer className="border-t border-white/10">

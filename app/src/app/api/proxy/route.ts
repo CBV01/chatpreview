@@ -1,15 +1,71 @@
 import { NextResponse } from "next/server";
+import crypto from "node:crypto";
 
 export const dynamic = "force-dynamic";
 
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const target = searchParams.get("url");
+  const fast = searchParams.get("fast") === "1";
   if (!target) return NextResponse.json({ error: "Missing url" }, { status: 400 });
 
+  // Simple in-memory cache (per server instance)
+  const globalAny = globalThis as any;
+  if (!globalAny.__proxyCache) globalAny.__proxyCache = new Map<string, { html: string; ts: number; etag: string }>();
+  const cache: Map<string, { html: string; ts: number; etag: string }> = globalAny.__proxyCache;
+  const now = Date.now();
+  const TTL_MS = 5 * 60 * 1000; // 5 minutes
+  const cached = cache.get(target);
+  const isFresh = !!cached && (now - cached.ts) < TTL_MS;
+
+  // Serve cached fast if requested or cache is fresh
+  if (fast && cached) {
+    const inm = request.headers.get("if-none-match");
+    if (inm && inm === cached.etag) {
+      return new NextResponse(null, {
+        status: 304,
+        headers: {
+          "cache-control": "public, s-maxage=300, stale-while-revalidate=60",
+          etag: cached.etag,
+        },
+      });
+    }
+    return new NextResponse(cached.html, {
+      status: 200,
+      headers: {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, s-maxage=300, stale-while-revalidate=60",
+        etag: cached.etag,
+      },
+    });
+  }
+  if (isFresh && cached) {
+    const inm = request.headers.get("if-none-match");
+    if (inm && inm === cached.etag) {
+      return new NextResponse(null, {
+        status: 304,
+        headers: {
+          "cache-control": "public, s-maxage=300, stale-while-revalidate=60",
+          etag: cached.etag,
+        },
+      });
+    }
+    return new NextResponse(cached.html, {
+      status: 200,
+      headers: {
+        "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, s-maxage=300, stale-while-revalidate=60",
+        etag: cached.etag,
+      },
+    });
+  }
+
   try {
-    const res = await fetch(target, { headers: { "user-agent": "Mozilla/5.0" } });
+    const ctrl = new AbortController();
+    const to = setTimeout(() => ctrl.abort(), 3500); // fail fast
+    const res = await fetch(target, { headers: { "user-agent": "Mozilla/5.0" }, signal: ctrl.signal });
     const html = await res.text();
+    clearTimeout(to);
 
     const origin = new URL(target).origin;
 
@@ -52,13 +108,30 @@ export async function GET(request: Request) {
       (_match, pre, quote, value) => `${pre}${quote}${proxify(value)}${quote}`
     );
 
-    return new NextResponse(transformed, {
+    const etag = `W/"${crypto.createHash("sha1").update(transformed).digest("hex")}"`;
+    const inm = request.headers.get("if-none-match");
+    if (inm && inm === etag) {
+      return new NextResponse(null, {
+        status: 304,
+        headers: {
+          "cache-control": "public, s-maxage=300, stale-while-revalidate=60",
+          etag,
+        },
+      });
+    }
+
+    const response = new NextResponse(transformed, {
       status: 200,
       headers: {
         "content-type": "text/html; charset=utf-8",
+        "cache-control": "public, s-maxage=300, stale-while-revalidate=60",
+        etag,
         // Intentionally omit original CSP/X-Frame headers to allow iframe render
       },
     });
+    // Cache the transformed HTML
+    cache.set(target, { html: transformed, ts: Date.now(), etag });
+    return response;
   } catch (e: any) {
     return NextResponse.json({ error: e?.message ?? "Proxy error" }, { status: 500 });
   }

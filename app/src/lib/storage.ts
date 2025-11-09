@@ -20,6 +20,12 @@ function getSupabase() {
   return null;
 }
 
+function isEphemeralServerless(): boolean {
+  // On Vercel, serverless functions run on ephemeral filesystems.
+  // Skip local fs writes/reads when Supabase is not configured.
+  return !!process.env.VERCEL;
+}
+
 const DATA_DIR = path.join(process.cwd(), "data");
 const DATA_FILE = path.join(DATA_DIR, "previews.json");
 
@@ -76,7 +82,9 @@ export async function createPreviewRecord(
 
   const all = await readLocal();
   all.push(record);
-  await writeLocal(all);
+  if (!isEphemeralServerless()) {
+    await writeLocal(all);
+  }
   return record;
 }
 
@@ -97,7 +105,7 @@ export async function getPreviewRecord(id: string): Promise<PreviewRecord | null
     } catch {}
   }
   const all = await readLocal();
-  const rec = all.find((p) => p.id === id) ?? null;
+  const rec = isEphemeralServerless() ? null : (all.find((p) => p.id === id) ?? null);
   if (!rec) return null;
   // Backfill defaults for older records
   rec.category = rec.category ?? "Uncategorized";
@@ -114,8 +122,10 @@ export async function deletePreviewRecord(id: string): Promise<void> {
     } catch {}
   }
   const all = await readLocal();
-  const filtered = all.filter((p) => p.id !== id);
-  await writeLocal(filtered);
+  if (!isEphemeralServerless()) {
+    const filtered = all.filter((p) => p.id !== id);
+    await writeLocal(filtered);
+  }
 }
 
 export async function listPreviewRecords(): Promise<PreviewRecord[]> {
@@ -133,7 +143,7 @@ export async function listPreviewRecords(): Promise<PreviewRecord[]> {
     } catch {}
   }
   const all = await readLocal();
-  return all
+  return (isEphemeralServerless() ? [] : all)
     .map((p) => ({ ...p, category: p.category ?? "Uncategorized" }))
     .sort((a, b) => (a.created_at < b.created_at ? 1 : -1));
 }
