@@ -72,7 +72,7 @@ export default function GuidePage() {
       <main className="container mx-auto px-6 py-10">
         <div className="mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-[260px_1fr] gap-8">
           {/* Left sidebar */}
-          <aside className="sticky top-24 self-start rounded-lg border border-white/10 bg-black/60 p-4 text-sm">
+          <aside className="hidden md:block sticky top-24 self-start rounded-lg border border-white/10 bg-black/60 p-4 text-sm">
             <div className="mb-3 text-xs uppercase tracking-wide opacity-70">Guide</div>
             <nav className="space-y-2">
               <a href="#overview" className="block rounded px-2 py-1 hover:bg-white/10">Overview</a>
