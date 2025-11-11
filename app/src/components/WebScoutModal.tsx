@@ -291,15 +291,11 @@ export default function WebScoutModal({ isOpen, onClose }: { isOpen: boolean; on
         setError("Please paste at least one valid domain (one per line).");
         return;
       }
-      if (normalized.length > 500) {
-        setError("Please limit to 500 domains per run.");
-        return;
-      }
       setShowResults(true);
       await runDomainsProgressive(normalized);
     } else {
       // Emails tab: progressive scrape based on domains inferred from emails
-      const emails = uniq.map((e) => cleanEmail(e)).filter(isValidEmail).slice(0, 500);
+      const emails = uniq.map((e) => cleanEmail(e)).filter(isValidEmail);
       if (emails.length === 0) {
         setError("Please paste valid email addresses (one per line).");
         return;
